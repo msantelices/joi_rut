@@ -64,9 +64,6 @@ let Joi = BaseJoi.extend((joi)=> {
     }
 })
 
-let Joi = BaseJoi.extend()
-
-
 module.exports = Joi
 
 
