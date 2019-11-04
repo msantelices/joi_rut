@@ -1,7 +1,7 @@
 const BaseJoi = require('@hapi/joi');
 
 const calculateDV = (rut)=> {
-    let cuerpo = rut.toString();
+    let cuerpo = rut.toString()
     let suma = 0
     let multiplo = 2
 
@@ -25,7 +25,6 @@ const calculateDV = (rut)=> {
         return "0"
     } else {
         return dvEsperado.toString()
-        
     }
 }
 
@@ -49,7 +48,7 @@ const validRut = (input) => {
 
 }
 
-let Joi = BaseJoi.extend((joi)=> {
+const Joi = BaseJoi.extend((joi)=> {
     return {
         type: 'rut',
         base: joi.string(),
